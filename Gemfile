@@ -6,6 +6,8 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 
 gem 'rails_12factor', group: :production
 
+gem 'simple_form'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
