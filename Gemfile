@@ -7,6 +7,7 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 gem 'rails_12factor', group: :production
 
 gem 'simple_form'
+gem 'devise', '~> 3.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
