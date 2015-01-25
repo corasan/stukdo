@@ -12,8 +12,9 @@
 -->
 
 <div class="panel panel-info">
-	<div class="panel-heading">Created <%= time_ago_in_words(task.created_at) %> ago
-		<%= link_to '<i class="fa fa-times align=right"></i>'.html_safe, task, method: :delete %>
+	<div class="panel-heading">
+		Created <%= time_ago_in_words(task.created_at) %> ago
+		<%= link_to '<i id="deletetask" class="fa fa-times"></i>'.html_safe, task, method: :delete %>
 	</div>
 	<div class="panel-body"><%= task.content %></div>
 
@@ -30,6 +31,5 @@
 			<td><%= link_to '<i class="fa fa-arrow-right fa-2x"></i>'.html_safe, change_task_path(task, state: "doing"), method: :put, class: "btn btn-info btn-xs btn-block" %></td>
 		<% end %>
 	</div>
-		
 
 </div>
