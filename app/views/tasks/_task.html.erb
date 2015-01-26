@@ -14,7 +14,7 @@
 <div class="panel panel-info">
 	<div class="panel-heading">
 		Created <%= time_ago_in_words(task.created_at) %> ago
-		<%= link_to '<i id="deletetask" class="fa fa-times"></i>'.html_safe, task, method: :delete %>
+		<%= link_to '<i class="fa fa-times"></i>'.html_safe, task, method: :delete, class: "pull-right" %>
 	</div>
 	<div class="panel-body"><%= task.content %></div>
 
