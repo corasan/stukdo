@@ -16,7 +16,7 @@
 		Created <%= time_ago_in_words(task.created_at) %> ago
 		<%= link_to '<i class="fa fa-times"></i>'.html_safe, task, method: :delete, class: "pull-right" %>
 	</div>
-	<div class="panel-body"><%= task.content %></div>
+	<div class="panel-body"><%= raw(task.content_html) %></div>
 
 	
 	<div class="panel-footer text-center">
